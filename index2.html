@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Angel Veronika Meylania - Portfolio</title>
-   </head>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
   <body>
     <div class="container">
       <div class="left">
-        <img src="img/ft.jpg" alt="Angel Veronika Meylania" />
+        <img src="ft.jpg" alt="Angel Veronika Meylania" />
         <div class="profile-title">About Me</div>
         <div class="profile-desc">
           <br />
           Perkenalkan saya Angel Veronika Meylania pelajar di SMKN 5 Malang yang tertarik dan aktif dalam dunia desain grafis dan seni digital. Menggambar dan mendesain adalah cara saya untuk berekspresi dan menyampaikan ide secara visual.
+          <br /><br />
           Saya suka mengeksplorasi warna, bentuk, dan gaya desain yang kreatif dan kekinian.
-          <br />
         </div>
-
         <div class="contact">
           <div class="contact-item"><span class="icon">📞</span><span>0882-0102-14404</span></div>
           <div class="contact-item"><span class="icon">✉️</span><span>angelveronikaa.@gmail.com</span></div>
@@ -30,10 +30,12 @@
           <div class="role">Student</div>
         </div>
 
+        <a href="index.html" class="back-button">⬅ Kembali ke Halaman Utama</a>
+
         <div class="content">
           <div class="section">
             <h3>➤ Learning Journey</h3>
-            <b>SMKN 5 MALANG-JURUSAN RPL</b>
+            <b>SMKN 5 MALANG - JURUSAN RPL</b>
             <p>
               Saya belajar tentang pemrograman, pengembangan aplikasi, dan logika komputer. Di samping itu, saya juga aktif mengembangkan minat di bidang desain grafis dan art digital sebagai ekspresi kreatif, seperti membuat ilustrasi,
               poster, dan konten visual.
@@ -52,10 +54,27 @@
 
           <div class="section">
             <h3>➤ VOLUNTEER EXPERIENCE</h3>
-            <p>Kontributor Desain Komunitas Online
-Ikut serta dalam komunitas desain di Telegram/Instagram untuk mengirim karya desain poster bertema sosial dan edukatif.</p>
+            <p>Kontributor Desain Komunitas Online — Ikut serta dalam komunitas desain di Telegram/Instagram untuk mengirim karya desain poster bertema sosial dan edukatif.</p>
           </div>
         </div>
+
+        <!-- Contact Me Section -->
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form name="contact-form">
+            <label for="name" class="form-label">Nama Lengkap</label>
+            <input type="text" id="name" name="nama" class="form-control" required />
+
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required />
+
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea id="pesan" name="pesan" class="form-control" rows="4" required></textarea>
+
+            <button type="submit">Kirim</button>
+          </form>
+        </section>
+        <!-- End Contact Me Section -->
       </div>
     </div>
   </body>
