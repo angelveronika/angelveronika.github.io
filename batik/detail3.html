@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Batik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-stone-50 text-stone-800">
+    <header class="bg-white shadow-md fixed w-full z-50">
+      <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold text-amber-900">Batik Indonesia</h1>
+
+        <!-- Tombol Hamburger (muncul di layar kecil) -->
+        <button id="menu-btn" class="md:hidden text-amber-900 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+         <!-- Menu -->
+    <nav id="menu" class="hidden md:flex space-x-6">
+      <a href="index.html#home" class="hover:text-amber-700">Home</a>
+      <a href="index.html#tentang" class="hover:text-amber-700">Tentang</a>
+      <a href="index.html#sejarah" class="hover:text-amber-700">Sejarah</a>
+      <a href="index.html#galeri" class="hover:text-amber-700">Galeri</a>
+      <a href="index.html#kontak" class="hover:text-amber-700">Kontak</a>
+    </nav>
+  </div>
+
+
+      <!-- Dropdown Menu (untuk mobile) -->
+      <div id="dropdown" class="hidden md:hidden flex flex-col bg-white shadow-md px-6 py-4 space-y-4">
+        <a href="#home" class="hover:text-amber-700">Home</a>
+        <a href="#tentang" class="hover:text-amber-700">Tentang</a>
+        <a href="#sejarah" class="hover:text-amber-700">Sejarah</a>
+        <a href="#galeri" class="hover:text-amber-700">Galeri</a>
+        <a href="#kontak" class="hover:text-amber-700">Kontak</a>
+      </div>
+    </header>
+
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const dropdown = document.getElementById('dropdown');
+
+      menuBtn.addEventListener('click', () => {
+        dropdown.classList.toggle('hidden');
+      });
+    </script>
+
+    <main class="pt-24 max-w-6xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Gambar -->
+        <div>
+          <img src="batikmegamendung.jpg" class="w-full rounded-xl shadow-lg" />
+        </div>
+        <!-- Deskripsi -->
+        <div>
+          <h2 class="text-3xl font-bold text-amber-800 mb-4">Batik Mega mendung</h2>
+          <p class="text-lg text-stone-700 leading-relaxed mb-6">
+            Batik Mega Mendung adalah batik khas Cirebon yang menampilkan motif awan berlapis-lapis. Motif ini identik dengan warna biru atau gradasi warna lain yang menyerupai awan mendung.
+          </p>
+          <ul class="space-y-2 text-stone-700">
+            <li><strong>Asal:</strong> Cirebon, Jawa Barat. Dipengaruhi budaya Tiongkok (awan/mendung sebagai simbol kesabaran dan keteduhan).</li>
+            <li><strong>Makna:</strong> Kesabaran & ketenangan hati, Kebesaran & keluasan pikiran, dan Kesejukan & keteduhan.</li>
+            <li><strong>Jenis:</strong> Mega Mendung Biru.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-amber-900 text-amber-100 py-6 text-center space-y-2">
+      <p>© 2025 Pameran Batik Indonesia.</p>
+      <p>
+        Instagram:
+        <a href="https://instagram.com/angelvrncya" target="_blank" class="hover:underline">@angelvrncya</a>
+      </p>
+      <p>
+        Email:
+        <a href="mailto:angelveronikaa94@gmail.com" class="hover:underline">angelveronikaa94@gmail.com</a>
+      </p>
+    </footer>
+
+  </body>
+</html>
